@@ -74,15 +74,19 @@ function genNum(arr, callback) {
 
 // console.log(genNum(nums, getPositiveNums));
 
-// console.log(genNum(nums, (element) => element > 0));
+console.log(genNum(nums, (element) => element < 0));
 
 // console.log(filteredNums);
 
-//foreach
+//forEach
+// console.log(nums.forEach((element) => element + 2));
 // nums.forEach((element) => console.log(element + 2));
 
-nums.map((element) => console.log(element % 2 === 0));
+//map
+// const filteredByMapArr = nums.map((element) => element * 3);
+// console.log(filteredByMapArr);
+// nums.map((element) => console.log(element * 2));
 
-
-const filteredNums = nums.filter((element) => (element % 2));
+//filter
+const filteredNums = nums.filter((element) => element % 2 === 0);
 // console.log(filteredNums);
